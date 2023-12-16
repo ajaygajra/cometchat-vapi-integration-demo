@@ -199,9 +199,12 @@ app.post("/user_call_response", function (req, res) {
     
     }
 });
-module.exports=app;
-app.listen(process.env.PORT);
 startWorker();
+
+module.exports = app
+
+// app.listen(process.env.PORT);
+
 
 
 
