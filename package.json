@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "start:all":"node app.js && node worker.js && node send_message.js",
     "start:webhooks":"node app.js",
-    "start:worker":"node worker.js",
     "start:sendMessage":"node send_message.js",
-    "start:dev": "nodemon --ignore messages.txt --ignore worker.js` app.js",
+    "start:dev": "nodemon app.js",
+    "start:dev:messageSender": "nodemon send_message.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
